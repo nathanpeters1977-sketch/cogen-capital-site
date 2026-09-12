@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const year = new Date().getFullYear();
+---
+
+<BaseLayout
+	title="Notes — Cogen Capital"
+	description="Public investment rationale and due diligence notes from Cogen Capital. Coming soon."
+>
+	<header class="site-header">
+		<div class="site-header__inner">
+			<a class="wordmark" href="/">Cogen Capital</a>
+			<nav class="nav" aria-label="Primary">
+				<a href="/#beliefs">Beliefs</a>
+				<a href="/#process">Process</a>
+				<a href="/#economics">Economics</a>
+				<a href="/#contact">Contact</a>
+				<a href="/notes" aria-current="page">Notes</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main">
+		<section class="page-intro" aria-labelledby="notes-heading">
+			<div class="wrap wrap--prose">
+				<p class="section__label">Notes</p>
+				<h1 id="notes-heading">Investment rationale &amp; DD notes</h1>
+				<p>
+					This space will hold public investment rationale and due diligence notes — recorded and
+					shared when agreed with a manager — so the wider investment community can read and comment.
+				</p>
+				<p>
+					Nothing is published here yet. Until then, reach us at
+					<a href="mailto:nathan@cogen-capital.com">nathan@cogen-capital.com</a>
+					or return <a href="/">home</a>.
+				</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="site-footer__inner">
+			<p>
+				<a href="mailto:nathan@cogen-capital.com">nathan@cogen-capital.com</a>
+				·
+				<a href="/">Home</a>
+			</p>
+			<p>© {year} Cogen Capital</p>
+		</div>
+	</footer>
+</BaseLayout>

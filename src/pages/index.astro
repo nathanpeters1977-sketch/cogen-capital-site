@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const year = new Date().getFullYear();
+---
+
+<BaseLayout
+	title="Cogen Capital"
+	description="Cogen Capital — radical transparency and aligned investing. Public investment rationale, due diligence notes, and full executive alignment with clients."
+>
+	<header class="site-header">
+		<div class="site-header__inner">
+			<a class="wordmark" href="/">Cogen Capital</a>
+			<nav class="nav" aria-label="Primary">
+				<a href="#beliefs">Beliefs</a>
+				<a href="#process">Process</a>
+				<a href="#economics">Economics</a>
+				<a href="#contact">Contact</a>
+				<a href="/notes">Notes</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main">
+		<section class="hero" aria-labelledby="hero-heading">
+			<div class="wrap wrap--prose">
+				<p class="section__label">Investment partnership</p>
+				<h1 id="hero-heading" class="hero__lede">
+					Radical transparency as a competitive moat — and full alignment as the basis of trust.
+				</h1>
+				<p class="hero__sub">
+					We record investment rationale and due diligence in public, invest our liquid net worth
+					alongside clients, and structure economics to incentivise alpha — not asset gathering.
+				</p>
+			</div>
+		</section>
+
+		<section id="beliefs" class="section" aria-labelledby="beliefs-heading">
+			<div class="wrap wrap--prose">
+				<p class="section__label">Beliefs</p>
+				<h2 id="beliefs-heading">We believe</h2>
+				<ul class="belief-list">
+					<li>Radical transparency is a competitive moat</li>
+					<li>The best decisions incorporate the widest band of perspectives</li>
+					<li>Efficacy requires targeted deliberation, not committees</li>
+					<li>Full executive alignment is a prerequisite for building client trust</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="process" class="section" aria-labelledby="process-heading">
+			<div class="wrap wrap--prose">
+				<p class="section__label">Process</p>
+				<h2 id="process-heading">How we work</h2>
+				<ul class="manifest-list">
+					<li>Recording all investment rationale and making it public</li>
+					<li>Recording the due diligence process when agreed with a manager and making it public</li>
+					<li>Soliciting comments from the wider global investment community</li>
+					<li>Investing 100% of liquid net worth alongside clients</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="economics" class="section" aria-labelledby="economics-heading">
+			<div class="wrap wrap--prose">
+				<p class="section__label">Economics</p>
+				<h2 id="economics-heading">How we generate revenue</h2>
+				<ul class="econ-list">
+					<li>Managing funds charging nominal management fees to cover overhead</li>
+					<li>
+						10% performance fees over the risk-free rate to incentivise alpha generation and high
+						quality portfolio construction
+					</li>
+					<li>Revenue sharing agreements with industry partners</li>
+					<li>Monetising content via social media</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="contact" class="section" aria-labelledby="contact-heading">
+			<div class="wrap wrap--prose">
+				<p class="section__label">Contact</p>
+				<h2 id="contact-heading">Get in touch</h2>
+				<div class="contact-block">
+					<p class="contact-email">
+						<a href="mailto:nathan@cogen-capital.com">nathan@cogen-capital.com</a>
+					</p>
+
+					<!-- Formspree: replace YOUR_FORM_ID with your form endpoint ID from formspree.io -->
+					<p class="form-hint">
+						<strong>Setup:</strong> replace <code>YOUR_FORM_ID</code> in the form action with your
+						Formspree form ID before go-live.
+					</p>
+
+					<form
+						class="contact-form"
+						action="https://formspree.io/f/YOUR_FORM_ID"
+						method="POST"
+					>
+						<input type="hidden" name="_subject" value="Cogen Capital — website enquiry" />
+						<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+						<label>
+							Name
+							<input type="text" name="name" required autocomplete="name" placeholder="Your name" />
+						</label>
+						<label>
+							Email
+							<input
+								type="email"
+								name="email"
+								required
+								autocomplete="email"
+								placeholder="you@example.com"
+							/>
+						</label>
+						<label>
+							Message
+							<textarea name="message" required placeholder="How can we help?"></textarea>
+						</label>
+						<button class="btn" type="submit">Send message</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="site-footer__inner">
+			<p>
+				<a href="mailto:nathan@cogen-capital.com">nathan@cogen-capital.com</a>
+				·
+				<a href="/notes">Notes</a>
+			</p>
+			<p>© {year} Cogen Capital</p>
+		</div>
+	</footer>
+</BaseLayout>
