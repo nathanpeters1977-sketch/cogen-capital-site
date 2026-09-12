@@ -441,3 +441,14 @@ main {
 		transition: none;
 	}
 }
+
+
+.footer-sep {
+	margin: 0 0.15em;
+	color: var(--text-muted);
+}
+
+/* Avoid awkward mid-word wraps on setup hint */
+.form-hint code {
+	white-space: nowrap;
+}
