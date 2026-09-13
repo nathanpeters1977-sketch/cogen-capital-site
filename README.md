@@ -43,11 +43,11 @@ Connect the Git repo (or upload `dist`), then trigger a production deploy.
 The contact form posts to:
 
 ```text
-https://formspree.io/f/YOUR_FORM_ID
+https://formspree.io/f/mqpkvkyl
 ```
 
 1. Create a form at [formspree.io](https://formspree.io).
-2. Replace `YOUR_FORM_ID` in `src/pages/index.astro` with your real form ID.
+2. Replace `mqpkvkyl` in `src/pages/index.astro` with your real form ID.
 3. Redeploy.
 
 ## Cost note
